@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'second-app';
+  current = "recipe";
+
+  currentPage() {
+    return this.current;
+  }
+
+  onNavigate(feature: string) {
+    this.current = feature;
+  }
 }
